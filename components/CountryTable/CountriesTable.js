@@ -83,7 +83,7 @@ const CountriesTable = ({ countries }) => {
 
             {
                 orderCountries.map((country) => (
-                    <Link href={`country/${country.alpha3Code}`} key={country.id}>
+                    <Link href={`country/${country.alpha3Code}`} key={country.name}>
                         <div className={styles.row}>
                             <div className={styles.flag}>
                                 <img src={country.flag} alt={country.name}/>
